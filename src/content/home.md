@@ -1,6 +1,6 @@
 We'll guide you every step of the way on your journey to building your very own workshops!
 
-After hosting workshops like [Boba Drops](https://boba.hackclub.com), [FuseRing](https://fusering.hackclub.com), and [Swirl](https://swirl.hackclub.com), what would you like to lead next?
+After hosting workshops like [Boba Drops](https://boba.hackclub.com), [Fusering](https://fusering.hackclub.com), and [Swirl](https://swirl.hackclub.com), what would you like to lead next?
 
 Start by reading through the documentation available in the [Overview](/overview) section of this website. It's designed to help familiarize you with the process and increase your chances of hosting a successful workshop. Once you have a solid idea of what you’d like to create, [apply](/overview/apply) using the form!
 
