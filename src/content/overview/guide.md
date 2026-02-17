@@ -30,7 +30,7 @@ So now that we know how to create steps and explain the meaning behind them, let
 
 
 - **Less is more.** Short bullet points help keep the reader's attention.
-- **Balance detail.** Let the speaker expand on the slide, but don't make it so sparse that anyone gets confused about the topic at hanf.
+- **Balance detail.** Let the speaker expand on the slide, but don't make it so sparse that anyone gets confused about the topic at hand.
 - **Make it pretty (later).** Focus on content first. Once the content is solid, make it consistent and visually appealing.
 - **Add relevant visuals.**
     - Screenshots of what participants are looking at

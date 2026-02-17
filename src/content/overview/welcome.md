@@ -30,9 +30,8 @@ Through Project YSWS, we’re offering a unique opportunity to share your work w
 We’re offering to everyone who creates a workshop:
 
 - Advice and mentorship, with an experienced mentor who will guide you through the entire process.
-- Funding for one in-person run-through of your workshop at the standard $5/hour rate with your club.
-  - Exclusive discounts on workshop-specific stickers (part of the budget)!
-- Handled logistics: We'll take care of the operational set-up of running a workshop, including: submissions forms, aAirtable setup, HCB, etc.
+- Funding for one in-person run-through of your workshop at the standard $5/hour (USD) rate with your club.
+- Handled logistics: We'll take care of the operational set-up of running a workshop, including submissions forms, Airtable setup, HCB, etc.
 
 
 Additionally, for a few successful workshops, you may be invited to turn your workshop into a Club-friendly, official YSWS for clubs around the world!
