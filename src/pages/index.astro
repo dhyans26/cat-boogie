@@ -29,9 +29,8 @@ import HomeContent from '../content/home.md';
 				<div class="card intro-card">
 					<h2 class="text-center mb-4">Ever wanted to...</h2>
 					<p class="text-center lead">Create your own YSWS? Get more flexibility? Help others get creative?</p>
-					<div class="highlight-box">
-						<h3>This is your chance!</h3>
-					</div>
+					<p class="text-center">This is your chance!</p>
+					<img src="/hackers-assemble.png" alt="Dino Orpheus" class="centered-image" style="max-width: 200px;" />
 					<div class="prose">
 						<HomeContent />
 					</div>
@@ -134,6 +133,10 @@ import HomeContent from '../content/home.md';
 	.prose {
 		line-height: 1.8;
 	}
+
+	.centered-image {
+		display: block;
+		justify-self: center;
 
 	@media (max-width: 768px) {
 		.intro-card {
