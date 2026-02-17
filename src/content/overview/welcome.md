@@ -2,7 +2,7 @@
 title: "Welcome to Project YSWS"
 description: "What exactly are we looking for in submissions?"
 pubDate: "Dec 31 2024"
-heroImage: "../../assets/blog-placeholder-3.jpg"
+heroImage: "../../assets/blog-placeholder-about.jpg"
 ---
 
 ### Introduction
