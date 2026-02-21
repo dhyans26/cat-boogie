@@ -1,4 +1,15 @@
 ---
+interface TeamMember {
+  name: string;
+  role: string;
+  avatar: string;
+}
+
+interface Props {
+  members: TeamMember[];
+  isLead?: boolean;
+}
+
 const { members, isLead = false } = Astro.props;
 ---
 
@@ -32,12 +43,17 @@ const { members, isLead = false } = Astro.props;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    transition: transform 0.2s;
+    transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
   }
 
   .team-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent);
+    transform: translateY(-4px);
+    border-color: rgba(236, 55, 80, 0.2);
+    box-shadow: var(--shadow-md);
+  }
+
+  :global([data-theme="dark"]) .team-card {
+    background: rgba(26, 26, 46, 0.5);
   }
 
   .avatar-wrapper {
