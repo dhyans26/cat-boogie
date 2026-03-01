@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
+import BackToTop from '../../components/BackToTop.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
 
 const posts = (await getCollection('overview'))
@@ -19,8 +20,9 @@ const posts = (await getCollection('overview'))
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body class="pattern-dots">
+		<a href="#main-content" class="skip-to-content">Skip to content</a>
 		<Header />
-		<main class="page-container" style="padding-top: 2rem; padding-bottom: 4rem;">
+		<main class="page-container" id="main-content" style="padding-top: 2rem; padding-bottom: 4rem;">
 			<section>
 				<h1 class="text-center mb-8">Overview & Resources</h1>
 				<div class="grid-2">
@@ -29,7 +31,7 @@ const posts = (await getCollection('overview'))
 							<a href={`/overview/${post.id}/`} class="card post-card-link">
 								{post.data.heroImage && (
 									<div class="image-container">
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
+										<Image width={720} height={360} src={post.data.heroImage} alt={post.data.title} />
 									</div>
 								)}
 								<div class="card-content">
@@ -42,6 +44,7 @@ const posts = (await getCollection('overview'))
 				</div>
 			</section>
 		</main>
+		<BackToTop />
 		<Footer />
 	</body>
 </html>
@@ -55,6 +58,7 @@ const posts = (await getCollection('overview'))
 		text-decoration: none;
 		color: inherit;
 		height: 100%;
+		border-radius: var(--radius-lg);
 	}
 
 	.post-card-link:hover {
@@ -78,11 +82,11 @@ const posts = (await getCollection('overview'))
 		height: 100%;
 		object-fit: cover;
 		border-radius: 0;
-		transition: transform 0.3s ease;
+		transition: transform var(--transition-slow);
 	}
 
 	.post-card-link:hover .image-container img {
-		transform: scale(1.05);
+		transform: scale(1.04);
 	}
 
 	.card-content {
@@ -94,14 +98,17 @@ const posts = (await getCollection('overview'))
 
 	.title {
 		margin: 0;
-		font-size: 1.5rem;
-		transition: color 0.2s;
+		font-size: 1.35rem;
+		transition: color var(--transition-fast);
+		letter-spacing: -0.01em;
 	}
 
 	.description {
 		margin: 0;
 		color: var(--text-muted);
-		font-size: 1rem;
+		font-size: 0.95rem;
 		line-height: 1.5;
+	}
+</style>
 	}
 </style>

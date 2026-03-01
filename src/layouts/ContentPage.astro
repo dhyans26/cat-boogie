@@ -24,7 +24,7 @@ const { title, description, heroImage } = Astro.props;
 				<div class="hero-header">
 					{heroImage && 
 						<div class="hero-image-wrapper">
-							<Image width={1020} height={510} src={heroImage} alt="" />
+							<Image width={1020} height={510} src={heroImage} alt={title} />
 						</div>
 					}
 					<div class="title-container text-center">
@@ -44,13 +44,18 @@ const { title, description, heroImage } = Astro.props;
 
 <style>
 	.post-article {
-		background: rgba(255, 255, 255, 0.25);
-		backdrop-filter: blur(12px);
-		border: 1px solid rgba(255, 255, 255, 0.3);
-		border-radius: var(--radius);
+		background: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+		border: 1px solid var(--border);
+		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-sm);
 		overflow: hidden;
 		margin-bottom: 4rem;
+	}
+
+	:global([data-theme="dark"]) .post-article {
+		background: rgba(26, 26, 46, 0.6);
 	}
 
 	.hero-image-wrapper {
@@ -66,19 +71,23 @@ const { title, description, heroImage } = Astro.props;
 	}
 
 	.title-container {
-		padding: 2rem 2rem 0;
+		padding: 2.5rem 2.5rem 0;
+	}
+
+	.title-container h1 {
+		letter-spacing: -0.02em;
 	}
 
 	.prose {
-		padding: 0 2rem 2rem;
-		max-width: 800px;
+		padding: 0 2.5rem 2.5rem;
+		max-width: 780px;
 		margin: 0 auto;
 	}
 
 	@media (max-width: 720px) {
 		.title-container, .prose {
-			padding-left: 1rem;
-			padding-right: 1rem;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
 		}
 	}
 </style>
