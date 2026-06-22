@@ -1,6 +1,10 @@
+## Now mirrored over at https://github.com/hackclub/Project-YSWS/commits/master/
+(as of June 22nd 2026)
+
+
 
 ## Commands
-
+---
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
